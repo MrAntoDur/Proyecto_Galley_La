@@ -93,6 +93,18 @@ footer {
     align-items: center;
 }
 
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .cart {
     width: 500px;
     background-color: #DCDCDC;
