@@ -187,6 +187,21 @@ footer a:hover {
         width: 150px;
     }
 
+    footer {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    footer article {
+        margin: 15px 0;
+    }
+
+    footer article a {
+        display: block;
+        margin: 5px 0;
+    }
+
     .cart {
         width: 400px;
         top: 80px;
@@ -237,6 +252,7 @@ footer a:hover {
     .cart {
         width: 100%;
         box-shadow: none;
+        right: 100%;
     }
 
     .cart__title {
