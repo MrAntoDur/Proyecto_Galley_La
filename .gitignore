@@ -70,3 +70,7 @@ node_modules/
 
 # Archivos y carpetas de Firebase CLI
 .firebase
+
+# Ignorar la carpeta de hosting de Firebase para GitHub Pages
+public/
+.firebase/
