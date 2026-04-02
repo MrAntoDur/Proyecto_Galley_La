@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    padding: 20px 50 px;
+    background-color: $color-fondo-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    &__logo {
+        width: 75px;
+    }
+
+    &__icon {
+        width: 75px;
+        cursor: pointer;
+        display: inline-block;
+
+        &--secondary {
+            opacity: .4;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $color-badge-rojo;
+        color: $color-blanco;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    @include tablet {
+        padding: 15px;
+        
+        .header__logo { width: 50px; }
+        .header__icon { width: 45px; }
+    }
+
+    @include mobile {
+        .header__icon { width: 40px; }
+        .header__logo { width: 50px; }
+    }
+}

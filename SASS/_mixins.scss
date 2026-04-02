@@ -1,0 +1,15 @@
+// Mixin para tablet
+
+@mixin tablet {
+    @media (max-width: 820px) {
+        @content;
+    }
+}
+
+//Mixin para smartphone
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}

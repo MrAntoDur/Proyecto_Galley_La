@@ -1,0 +1,21 @@
+//Se importa la configuración
+
+@import 'variables';
+@import 'mixins';
+
+//Se importan los estilos globales
+
+body {
+    width: 100%;
+    font-size: $font-size-base;
+    font-weight: $font-weight-light;
+    color: $color-texto-suave;
+    font-family: $fuente-principal;
+    margin: 0;
+}
+
+@import 'header';
+@import 'banner';
+@import 'products';
+@import 'cart';
+@import 'footer';

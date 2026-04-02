@@ -1,0 +1,47 @@
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $color-oscuro-puro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: $color-acento-cyan;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s, text-decoration 0.3s;
+
+        &:hover {
+            color: $color-blanco;
+            text-decoration: underline;
+        }
+    }
+
+    article {
+        span {
+            display: block;
+            font-size: 12px;
+        }
+    }
+
+    .footer__logo-secundario {
+        width: 60px;
+    }
+
+    @include tablet {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+
+        article {
+            margin: 15px 0;
+
+            a{
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    }
+}

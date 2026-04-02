@@ -1,0 +1,55 @@
+.products {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+    cursor: pointer;
+
+    &__img {
+        width: 300px;
+        margin-bottom: 15px;
+
+        @include tablet { width: 150px; }
+        @include mobile {
+            width: 100px;
+            max-width: 200px;
+        }
+    }
+
+    &__model {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 5px;
+        @include mobile { padding: 0 10px; }
+    }
+
+    &__price {
+        font-weight: $font-weight-light;
+        font-size: $font-size-base;
+        @include mobile { padding: 0 10 px; }
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        justify-items: center;
+    }
+}
+
+.btn-add-cart {
+    background-color: $color-oscuro-puro;
+    color: $color-blanco;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $color-acento-cyan;
+    }
+}
